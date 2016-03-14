@@ -1,0 +1,47 @@
+# Chapter 3
+
+count = arcpy.GetCount_management("zipcodes")
+print count
+
+# Chapter 4 is about how to name, use, manipulate strings and lists
+# as well as functions print dir(__builtins__)
+
+type(123) # int
+type(1.23) # float
+type("GIS") # str
+range(10, 21, 2) # [10, 12, 14, 16, 20]
+range(5) # [0, 1, 2, 3, 4]
+
+# <object>.<method>(<arguments>)
+topic = "Geographic Information Systems"
+topic.count("i") # returns 2
+topic.split(" ") # returns ['Geographic', 'Information', 'Systems']
+
+path = "C:/Data/Part1/Final"
+pathlist = path.split("/")
+lastpath = pathlist[-1]
+print lastpath # "Final"
+
+mylist = ['A', 'B', 'C']
+mylist.append("D")
+print mylist
+
+# Hundreds of additional functions are stored in modules. Before you can use a function, you have to import its
+# module using the import function. One of the most common of these is the math module.
+import math
+print dir(math)
+math.floor.__doc__
+
+# random
+import random
+p = random.randint(1,6)
+print p
+
+if p == 6:
+    print "you win!"
+elif p == 5:
+    print "try again"
+else:
+    print "we all can't be winners!"
+    
+
